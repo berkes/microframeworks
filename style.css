@@ -38,7 +38,7 @@ body {
   display: none;
 }
 a, a:hover, a:visited {
-  text-decoration: none;
+  text-decoration: underline;
   font-style: normal;
   color: #666;
   cursor: pointer;
