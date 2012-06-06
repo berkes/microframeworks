@@ -24,9 +24,9 @@
 
   <ul id="impress">
     <!--intro -->
-    <li id="atberkes">@berkes</li>
-    <li id="berk-es">@berkes</li>
-    <li id="about">Bèr Kessels maakt Drupalsites sinds Drupal 3.<br/>
+    <li class="step slide" id="atberkes">@berkes</li>
+    <li class="step slide" id="berk-es">@berkes</li>
+    <li class="step slide" id="about">Bèr Kessels maakt Drupalsites sinds Drupal 3.<br/>
       Gebruikt Drupal als CMS.<br/>
       En ontwikkelt nu webapplicaties met Ruby on Rails, Sinatra en veel meer.
     </li>
@@ -35,45 +35,49 @@
     <li id="micro" class="step slide" data-x="0" data-y="0" data-scale="4">Wat is micro?</li>
     <li id="definition" class="step slide" data-x="200" data-y="200">«The “micro” in microframework means <em>Flask</em> aims to keep the core simple but extensible»</li>
     <li id="definition-not" class="step slide" data-x="900" data-y="800"><strong>Niet:</strong></li>
-      <li>missende functionaliteit</li>
-      <li>voorgebakken beslissingen</li>
-      <li>vastgeklonken aan databases, template engines, talen</li>
+      <li class="step slide">missende functionaliteit</li>
+      <li class="step slide">voorgebakken beslissingen</li>
+      <li class="step slide">vastgeklonken aan databases, template engines, talen</li>
     <li class="step slide" data-x="900" data-y="1000" data-rotate="90">Het kan alles zijn wat jij wilt.</li>
     <li class="step slide" data-x="1000" data-y="1000" data-rotate="90">En niets dat je niet wilt.</li>
 
     <!--voordelen-->
-    <li>Voordelen</li>
-      <li>Snelle releases.</li>
-      <li>Performance.</li>
-      <li>Smallere attacksurface.</li>
-      <li>Onafhankelijke ontwikkeling.</li>
-      <li>Onafhankelijke backends.</li>
-      <li>Design- en indeelvrijheid.</li>
-      <li>Kort pad van idee naar uitvoering.</li>
-      <li>Creativiteit is enige beperking.</li>
+    <li class="step slide">Voordelen</li>
+      <li class="step slide">
+        <blockquote>Een goede ontwikkelaar kan niet zozeer alle problemen oplossen, maar kan
+ieder probleem opdelen in makkelijk oplosbare, kleine probleempjes.</blockquote>
+      </li>
+      <li class="step slide">Snelle releases.</li>
+      <li class="step slide">Performance.</li>
+      <li class="step slide">Smallere attacksurface.</li>
+      <li class="step slide">Onafhankelijke ontwikkeling.</li>
+      <li class="step slide">Onafhankelijke backends.</li>
+      <li class="step slide">Design- en indeelvrijheid.</li>
+      <li class="step slide">Kort pad van idee naar uitvoering.</li>
+      <li class="step slide">Creativiteit is enige beperking.</li>
 
     <!--nadelen-->
-    <li>Nadelen</li>
-      <li>Aparte codebase.</li>
-      <li>Extra technologie, grotere stack.</li>
-      <li>Bredere attacksurface.</li>
-      <li>Geen CMS. Interfaces ontbreken.</li>
+    <li class="step slide">Nadelen</li>
+      <li class="step slide">Aparte codebase.</li>
+      <li class="step slide">Extra technologie, grotere stack.</li>
+      <li class="step slide">Bredere attacksurface.</li>
+      <li class="step slide">Geen CMS. Interfaces ontbreken.</li>
 
-    <li>Queen Drupal</li>
+    <li class="step slide">Queen Drupal</li>
     <!--met Drupal: ernaast-->
-    <li id="naast">Ernaast:</li>
-    <li id="naast-bv"><strong>Bijvoorbeeld:</strong> Comment-moderator</li>
-    <li id="naast-uitleg">Applicatie die Drupal resources gebruikt.<br/>
+    <li class="step slide" id="naast">Ernaast:</li>
+    <li class="step slide" id="naast-bv"><strong>Bijvoorbeeld:</strong> Comment-moderator</li>
+    <li class="step slide" id="naast-uitleg">Applicatie die Drupal resources gebruikt.<br/>
       Database, services, RSS.
     </li>
-    <li id="naast-voordelen">
+    <li class="step slide" id="naast-voordelen">
       <strong>Voordelen:</strong>
       <ul>
         <li>Cross-site applicaties.</li>
         <li>Afwijkende toegankelijkheid.</li>
       </ul>
     </li>
-    <li id="naast-nadelen">
+    <li class="step slide" id="naast-nadelen">
       <strong>Nadelen (t.o.v in Drupal):</strong>
       <ul>
         <li>Drupal dicteert database.</li>
@@ -81,17 +85,17 @@
       </ul>
     </li>
     <!--met Drupal: ervoor -->
-    <li id="voor">Ervoor:</li>
-    <li id="voor-bv"><strong>Bijvoorbeeld:</strong> JSON stream voor mobiele apps.</li>
-    <li id="voor-uitleg">(Technische) applicatie als proxy.</li>
-    <li id="voor-voordelen">
+    <li class="step slide" id="voor">Ervoor:</li>
+    <li class="step slide" id="voor-bv"><strong>Bijvoorbeeld:</strong> JSON stream voor mobiele apps.</li>
+    <li class="step slide" id="voor-uitleg">(Technische) applicatie als proxy.</li>
+    <li class="step slide" id="voor-voordelen">
       <strong>Voordelen (t.o.v als Drupalmodule):</strong>
       <ul>
         <li>Ontwikkelvrijheid.</li>
         <li>Migratievrijheid.</li>
       </ul>
     </li>
-    <li id="voor-nadelen">
+    <li class="step slide" id="voor-nadelen">
       <strong>Nadelen:</strong>
       <ul>
         <li>Aparte deployment en hosting.</li>
@@ -99,10 +103,10 @@
     </li>
 
     <!--met Drupal: erachter -->
-    <li id="achter">Erachter:</li>
-    <li id="achter-bv"><strong>Bijvoorbeeld:</strong> Ad-server, Scraper</li>
-    <li id="achter-uitleg">Generieke applicatie voor inkapselen van complexe of lelijke resources.</li>
-    <li id="achter-voordelen">
+    <li class="step slide" id="achter">Erachter:</li>
+    <li class="step slide" id="achter-bv"><strong>Bijvoorbeeld:</strong> Ad-server, Scraper</li>
+    <li class="step slide" id="achter-uitleg">Generieke applicatie voor inkapselen van complexe of lelijke resources.</li>
+    <li class="step slide" id="achter-voordelen">
       <strong>Voordelen:</strong>
       <ul>
         <li>Geschiktere talen dan PHP. Toch Drupal.</li>
@@ -110,7 +114,7 @@
         <li>Losstaande releases.</li>
       </ul>
     </li>
-    <li id="achter-nadelen">
+    <li class="step slide" id="achter-nadelen">
       <strong>Nadelen:</strong>
       <ul>
         <li>NULL.</li>
@@ -118,30 +122,30 @@
     </li>
 
     <!-- los -->
-    <li id="los">Losstaand</li>
-    <li><img src="example-commerce.png" alt=""></li>
-    <li><img src="example-resqueue.png" alt=""></li>
-    <li><img src="example-serve.png" alt=""></li>
-    <li><img src="example-project.png" alt=""></li>
+    <li class="step slide" id="los">Losstaand</li>
+    <li class="step slide"><img src="example-commerce.png" alt=""></li>
+    <li class="step slide"><img src="example-resqueue.png" alt=""></li>
+    <li class="step slide"><img src="example-serve.png" alt=""></li>
+    <li class="step slide"><img src="example-project.png" alt=""></li>
 
     <!--voorbeelden: logo's -->
-    <li id="voorbeelden">Voorbeelden</li>
-    <li id="voorbeelden-php">PHP</li>
-    <li class="voorbeeld">Tonic</li>
-    <li class="voorbeeld">Slim</li>
-    <li class="voorbeeld">Limonade</li>
-    <li class="voorbeeld">Silex</li>
-    <li id="voorbeelden-ruby">Ruby</li>
-    <li class="voorbeeld">Sinatra</li>
-    <li class="voorbeeld">Camping</li>
-    <li id="voorbeelden-python">Python</li>
-    <li class="voorbeeld">web.py</li>
-    <li class="voorbeeld">Flask</li>
-    <li class="voorbeeld">Bottle</li>
-    <li class="voorbeeld">Bobo</li>
+    <li class="step slide" id="voorbeelden">Voorbeelden</li>
+    <li class="step slide" id="voorbeelden-php">PHP</li>
+    <li class="step slide voorbeeld">Tonic</li>
+    <li class="step slide voorbeeld">Slim</li>
+    <li class="step slide voorbeeld">Limonade</li>
+    <li class="step slide voorbeeld">Silex</li>
+    <li class="step slide" id="voorbeelden-ruby">Ruby</li>
+    <li class="step slide voorbeeld">Sinatra</li>
+    <li class="step slide voorbeeld">Camping</li>
+    <li class="step slide" id="voorbeelden-python">Python</li>
+    <li class="step slide voorbeeld">web.py</li>
+    <li class="step slide voorbeeld">Flask</li>
+    <li class="step slide voorbeeld">Bottle</li>
+    <li class="step slide voorbeeld">Bobo</li>
 
     <!--outtro -->
-    <li id="kthxbye">kthxby.<br/><strong>Vragen?</strong></li>
+    <li class="step slide" id="kthxbye">kthxby.<br/><strong>Vragen?</strong></li>
   </ul>
   <script src="impress.js"></script>
   <script>impress().init();</script>
