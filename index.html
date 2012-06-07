@@ -8,13 +8,15 @@
 
   <meta name="author" content="Bèr Kessels berk.es" />
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700italic,300,400,800">
+  <link rel="stylesheet" href="normalize.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="shortcut icon" href="favicon.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
-  
+
 <body class="impress-not-supported">
+  <div class="background"> </div>
   <div class="fallback-message">
     <p>Je browser ondersteunt de features voor impress.js niet. Dus krijg je een vereenvoudigde versie van de presentatie voorgeschoteld.</p>
     <p>Voor de beste ervaring, gebruik de laatste versie van <em>Firefox</em>, <em>Chrome</em> of <em>Safari</em></p>
@@ -22,54 +24,71 @@
 
   <ul id="impress">
     <!--intro -->
-    <li id="atberkes">@berkes</li>
-    <li id="berk-es">@berkes</li>
-    <li id="about">Bèr Kessels maakt Drupalsites sinds Drupal 3.<br/>
-      Gebruikt Drupal als CMS.<br/>
-      En ontwikkelt nu webapplicaties met Ruby on Rails, Sinatra en veel meer.
+    <li class="step slide title" id="this-qr" data-x="-5600" data-y="-3300" data-scale="2">
+      <img src="qr.png" alt="qr for berk.es/microframeworks" /><br />
+      <a href="http://berk.es/microframeworks">http://berk.es/microframeworks</a>
+    </li>
+    <li class="step slide title" id="qapp" data-x="-5600" data-y="-2000" data-scale="2"><strong class="big">Question app:</strong><br/><a href="http://dev.webschuur.com:3000">http://dev.webschuur.com:3000</a></li>
+
+    <li class="step slide title" id="atberkes" data-x="-5600" data-y="-1300" data-scale="1">@berkes</li>
+    <li class="step slide" id="berk-es" data-x="-5600" data-y="-1000" data-scale="1"><a href="http://berk.es">http://berk.es</a></li>
+    <li class="step slide" id="webschuur" data-x="-5600" data-y="-800" data-scale="1">AKA Webschuur</li>
+    <li class="step slide" id="about" data-x="-5600" data-y="-400" data-scale="1">
+    <p>Bèr Kessels maakt Drupalsites sinds <em>Drupal 3</em>.<br/>
+    Gebruikt Drupal als <em>CMS</em>.</p>
+    <p>En ontwikkelt nu webapplicaties met <em>Ruby on Rails</em>, Sinatra en veel meer.</p>
     </li>
 
     <!--micro-->
-    <li id="micro" class="step slide" data-x="0" data-y="0" data-scale="4">Wat is micro?</li>
-    <li id="definition" class="step slide" data-x="200" data-y="200">«The “micro” in microframework means <em>Flask</em> aims to keep the core simple but extensible»</li>
-    <li id="definition-not" class="step slide" data-x="900" data-y="800"><strong>Niet:</strong></li>
-      <li>missende functionaliteit</li>
-      <li>voorgebakken beslissingen</li>
-      <li>vastgeklonken aan databases, template engines, talen</li>
-    <li class="step slide" data-x="900" data-y="1000" data-rotate="90">Het kan alles zijn wat jij wilt.</li>
-    <li class="step slide" data-x="1000" data-y="1000" data-rotate="90">En niets dat je niet wilt.</li>
+    <li id="micro" class="step slide title big" data-x="-4000" data-y="-1000" data-scale="6" data-rotate="270">Wat is micro?</li>
+    <li id="definition" class="step slide" data-x="-2000" data-y="-3550" data-scale="3"><blockquote>The “<em>micro</em>” in microframework means [it] aims to keep the core simple but extensible<span class="author">Flask</span></blockquote></li>
+
+    <li id="definition-not" class="step slide big title" data-x="-3400" data-y="-2300" data-scale="2" data-rotate="-90"><strong>Geen:</strong></li>
+      <li class="step slide bullet" data-x="-2800" data-y="-2450">Missende functionaliteit</li>
+      <li class="step slide bullet" data-x="-2800" data-y="-2350">Voorgebakken beslissingen</li>
+      <li class="step slide bullet" data-x="-2800" data-y="-2250">Technische beperkingen</li>
+      <li class="step slide bullet" data-x="-2800" data-y="-2150">Afhankelijkheden</li>
+    <li class="step slide" data-x="-2450" data-y="-1900" data-scale="2">Het kan alles zijn wat jij wilt.</li>
+    <li class="step slide" data-x="-2450" data-y="-1700" data-scale="2">En niets dat je niet wilt.</li>
+
+    <li class="step slide" data-x="1200" data-y="-3400" data-scale="3">
+      <blockquote>Een goede ontwikkelaar kan niet zozeer alle problemen oplossen, maar kan
+ieder probleem opdelen in makkelijk oplosbare, kleine probleempjes.<span class="author">berkes</span></blockquote>
+    </li>
 
     <!--voordelen-->
-    <li>Voordelen</li>
-      <li>Snelle releases.</li>
-      <li>Performance.</li>
-      <li>Smallere attacksurface</li>
-      <li>Onafhankelijke ontwikkeling.</li>
-      <li>Onafhankelijke backends.</li>
-      <li>Design- en indeelvrijheid.</li>
+    <li class="step slide big title" data-x="-200" data-y="-2250" data-scale="2" data-rotate="-90">Voordelen:</li>
+      <li class="step slide bullet" data-x="450" data-y="-2600">Snelle releases.</li>
+      <li class="step slide bullet" data-x="450" data-y="-2500">Performance.</li>
+      <li class="step slide bullet" data-x="450" data-y="-2400">Smallere attacksurface.</li>
+      <li class="step slide bullet" data-x="450" data-y="-2300">Onafhankelijke ontwikkeling.</li>
+      <li class="step slide bullet" data-x="450" data-y="-2200">Onafhankelijke backends.</li>
+      <li class="step slide bullet" data-x="450" data-y="-2100">Design- en indeelvrijheid.</li>
+      <li class="step slide bullet" data-x="450" data-y="-2000">Kort pad van idee naar uitvoering.</li>
+      <li class="step slide bullet" data-x="450" data-y="-1900">Creativiteit is enige beperking.</li>
 
     <!--nadelen-->
-    <li>Nadelen</li>
-      <li>Aparte codebase.</li>
-      <li>Extra technologie, grotere stack.</li>
-      <li>Bredere attacksurface.</li>
-      <li>Geen CMS. Interfaces ontbreken.</li>
+    <li class="step slide big title" data-x="1200" data-y="-2250" data-scale="2" data-rotate="-90">Nadelen:</li>
+      <li class="step slide bullet" data-x="1850" data-y="-2600">Aparte codebase.</li>
+      <li class="step slide bullet" data-x="1850" data-y="-2500">Extra technologie, grotere stack.</li>
+      <li class="step slide bullet" data-x="1850" data-y="-2400">Bredere attacksurface.</li>
+      <li class="step slide bullet" data-x="1850" data-y="-2300">Geen CMS. Interfaces ontbreken.</li>
 
-    <li>Queen Drupal</li>
+    <li class="step slide" id="queen" data-x="0" data-y="900" data-scale="4"><img src="druplicon.png" alt="druplicon"/></li>
     <!--met Drupal: ernaast-->
-    <li id="naast">Ernaast:</li>
-    <li id="naast-bv"><strong>Bijvoorbeeld:</strong> Comment-moderator</li>
-    <li id="naast-uitleg">Applicatie die Drupal resources gebruikt.<br/>
+    <li class="step slide big title" id="naast" data-x="-2000" data-y="-600" data-scale="2">Ernaast:</li>
+    <li class="step slide" id="naast-bv" data-x="-2500" data-y="-400"><strong>Bijvoorbeeld:</strong> Comment-moderator</li>
+    <li class="step slide" id="naast-uitleg" data-x="-1500" data-y="-400">Applicatie die Drupal resources gebruikt.<br/>
       Database, services, RSS.
     </li>
-    <li id="naast-voordelen">
+    <li class="step slide" id="naast-voordelen" data-x="-500" data-y="-540">
       <strong>Voordelen:</strong>
       <ul>
         <li>Cross-site applicaties.</li>
         <li>Afwijkende toegankelijkheid.</li>
       </ul>
     </li>
-    <li id="naast-nadelen">
+    <li class="step slide" id="naast-nadelen" data-x="500" data-y="-540">
       <strong>Nadelen (t.o.v in Drupal):</strong>
       <ul>
         <li>Drupal dicteert database.</li>
@@ -77,17 +96,17 @@
       </ul>
     </li>
     <!--met Drupal: ervoor -->
-    <li id="voor">Ervoor:</li>
-    <li id="voor-bv"><strong>Bijvoorbeeld:</strong> JSON stream voor mobiele apps.</li>
-    <li id="voor-uitleg">(Technische) applicatie als proxy.</li>
-    <li id="voor-voordelen">
+    <li class="step slide title big" id="voor" data-x="2000" data-y="0" data-scale="2">Ervoor:</li>
+    <li class="step slide" id="voor-bv" data-x="1500" data-y="200"><strong>Bijvoorbeeld:</strong> JSON stream voor mobiele apps.</li>
+    <li class="step slide" id="voor-uitleg" data-x="1500" data-y="300">(Technische) applicatie als proxy.</li>
+    <li class="step slide" id="voor-voordelen" data-x="1500" data-y="550">
       <strong>Voordelen (t.o.v als Drupalmodule):</strong>
       <ul>
         <li>Ontwikkelvrijheid.</li>
         <li>Migratievrijheid.</li>
       </ul>
     </li>
-    <li id="voor-nadelen">
+    <li class="step slide" id="voor-nadelen" data-x="1500" data-y="850">
       <strong>Nadelen:</strong>
       <ul>
         <li>Aparte deployment en hosting.</li>
@@ -95,10 +114,10 @@
     </li>
 
     <!--met Drupal: erachter -->
-    <li id="achter">Erachter:</li>
-    <li id="achter-bv"><strong>Bijvoorbeeld:</strong> Ad-server, Scraper</li>
-    <li id="achter-uitleg">Generieke applicatie voor inkapselen van complexe of lelijke resources.</li>
-    <li id="achter-voordelen">
+    <li class="step slide title big" id="achter" data-x="-2000" data-y="0" data-scale="2">Erachter:</li>
+    <li class="step slide" id="achter-bv" data-x="-1500" data-y="200"><strong>Bijvoorbeeld:</strong> Ad-server, Scraper</li>
+    <li class="step slide" id="achter-uitleg" data-x="-1500" data-y="300">Generieke applicatie voor inkapselen van complexe of lelijke resources.</li>
+    <li class="step slide" id="achter-voordelen" data-x="-1500" data-y="550">
       <strong>Voordelen:</strong>
       <ul>
         <li>Geschiktere talen dan PHP. Toch Drupal.</li>
@@ -106,7 +125,7 @@
         <li>Losstaande releases.</li>
       </ul>
     </li>
-    <li id="achter-nadelen">
+    <li class="step slide" id="achter-nadelen" data-x="-1500" data-y="850">
       <strong>Nadelen:</strong>
       <ul>
         <li>NULL.</li>
@@ -114,30 +133,31 @@
     </li>
 
     <!-- los -->
-    <li id="los">Losstaand</li>
-    <li><img src="example-commerce.png" alt=""></li>
-    <li><img src="example-resqueue.png" alt=""></li>
-    <li><img src="example-serve.png" alt=""></li>
-    <li><img src="example-project.png" alt=""></li>
+    <li class="step slide bit title" id="los" data-x="-2000" data-y="2400" data-scale="2">Losstaand:</li>
+    <li class="step slide" data-x="-2500" data-y="2800" data-z="-200"><img src="example-commerce.png" alt=""></li>
+    <li class="step slide" data-x="-1500" data-y="2800" data-z="-400"><img src="example-resqueue.png" alt=""></li>
+    <li class="step slide" data-x="-500" data-y="2800" data-z="-600"><img src="example-serve.png" alt=""></li>
+    <li class="step slide" data-x="500" data-y="2800" data-z="-800"><img src="example-project.png" alt=""></li>
 
     <!--voorbeelden: logo's -->
-    <li id="voorbeelden">Voorbeelden</li>
-    <li id="voorbeelden-php">PHP</li>
-    <li class="voorbeeld">Tonic</li>
-    <li class="voorbeeld">Slim</li>
-    <li class="voorbeeld">Limonade</li>
-    <li class="voorbeeld">Silex</li>
-    <li id="voorbeelden-ruby">Ruby</li>
-    <li class="voorbeeld">Sinatra</li>
-    <li class="voorbeeld">Camping</li>
-    <li id="voorbeelden-python">Python</li>
-    <li class="voorbeeld">web.py</li>
-    <li class="voorbeeld">Flask</li>
-    <li class="voorbeeld">Bottle</li>
-    <li class="voorbeeld">Bobo</li>
+    <li class="step slide big title" id="voorbeelden" data-x="-6000" data-y="3000" data-rotate="90" data-scale="2">Voorbeelden</li>
+    <li class="step slide big title" id="voorbeelden-php" data-x="-5500" data-y="2200">PHP</li>
+    <li class="step slide voorbeeld bullets" data-x="-5500" data-y="2400"><a href="http://limonade-php.github.com/">Limonade<a/></li>
+    <li class="step slide voorbeeld bullets" data-x="-5500" data-y="2500"><a href="http://silex.sensiolabs.org/">Silex<a/>(on Symfony)</li>
+    <li class="step slide voorbeeld bullets" data-x="-5500" data-y="2600"><a href="http://peej.github.com/tonic/">Tonic<a/></li>
+    <li class="step slide voorbeeld bullets" data-x="-5500" data-y="2700"><a href="http://www.slimframework.com/">Slim<a/></li>
+    <li class="step slide big title" id="voorbeelden-ruby" data-x="-4500" data-y="2200">Ruby</li>
+    <li class="step slide voorbeeld bullets" data-x="-4500" data-y="2400"><a href="http://www.sinatrarb.com/">Sinatra<a/></li>
+    <li class="step slide voorbeeld bullets" data-x="-4500" data-y="2500"><a href="http://www.ruby-camping.com/">Camping<a/></li>
+    <li class="step slide big title" id="voorbeelden-python" data-x="-3500" data-y="2200">Python</li>
+    <li class="step slide voorbeeld bullets" data-x="-3500" data-y="2400"><a href="http://webpy.org/">web.py<a/></li>
+    <li class="step slide voorbeeld bullets" data-x="-3500" data-y="2500"><a href="http://flask.pocoo.org/">Flask<a/></li>
+    <li class="step slide voorbeeld bullets" data-x="-3500" data-y="2600"><a href="http://bottlepy.org/docs/dev/">Bottle<a/></li>
+    <li class="step slide voorbeeld bullets" data-x="-3500" data-y="2700"><a href="http://bobo.digicool.com/">Bobo<a/></li>
 
     <!--outtro -->
-    <li id="kthxbye">kthxby.<br/><strong>Vragen?</strong></li>
+    <li class="step slide" id="kthxbye" data-x="3000" data-y="-4000">kthxby.<br/><a href="http://dev.webschuur.com:3000">Vragen?</a><li>
+    <li class="step slide" id="overview" data-x="0" data-y="0" data-scale="10"> <li>
   </ul>
   <script src="impress.js"></script>
   <script>impress().init();</script>

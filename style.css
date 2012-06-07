@@ -1,0 +1,126 @@
+/** Stolen and adapted from view-source:http://johnpolacek.github.com/WhatTheHeckIsResponsiveWebDesign-impressjs/css/style.css
+ **/
+html {
+  overflow: hidden;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: .8;
+  font-size: 45px;
+}
+.background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: -moz-radial-gradient(50% 50%, farthest-side, #fff, #efefef);
+  background: -webkit-gradient(radial, 50% 50%, 250, 50% 50%, 750, from(#fff), to(#efefef));
+  z-index: 0;
+  opacity: 1;
+}
+.fallback-message {
+  font-family: sans-serif;
+  line-height: 1.3;
+
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+
+  border: 1px solid #E4C652;
+  border-radius: 10px;
+  background: #EEDC94;
+}
+
+.fallback-message p {
+  margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+  display: none;
+}
+a, a:hover, a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: #666;
+  cursor: pointer;
+  background: yellow;
+  padding: 0 4px;
+}
+a:hover { color: #333;}
+
+.title { font-size: 60px; font-weight: 800; }
+.big { text-transform: uppercase; margin: 0; padding: 0; }
+strong, .bold { font-weight: 800; }
+em, .light { 
+  font-weight: 400;
+  background: #eee;
+  padding: 0 4px;
+}
+.extralight { font-weight: 300; letter-spacing: .1em; }
+.small { display: block; padding: 20px; font-size: 20px; font-weight: 600; }
+.step.bullet {
+  text-align: left;
+}
+blockquote {
+  text-align: justify;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+blockquote .author {
+  display: block;
+  text-align: right;
+  padding: 10px 40px;
+  font-weight: 600;
+  font-size: 36px;
+}
+p {
+  text-align: justify;
+}
+.img-wrap {	margin: 0 auto; }
+.img-inline { display: inline-block; padding: 12px 3px; }
+.img-link {	text-decoration: none; }
+.img-border { border: solid 1px #aaa; }
+
+/* COMMON STEP STYLES */
+ul li.step {
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+.step {
+  text-align: center;
+  width: 1000px;
+  padding: 20px;
+
+  line-height: 1.4em;
+
+  /* background-color: #fff;*/
+  /* border: 2px solid #000;*/
+  /* border-radius: 12px;*/
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  -ms-box-sizing:     border-box;
+  -o-box-sizing:      border-box;
+  box-sizing:         border-box;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition:    opacity 1s;
+  -ms-transition:     opacity 1s;
+  -o-transition:      opacity 1s;
+  transition:         opacity 1s;
+
+  text-shadow: rgba(0,0,0,.01) 0 0 1px; /* Chrome @font-face anti-aliasing fix */
+}
+.step:not(.active) { opacity: 0.1; }
+
+/* STEP SPECIFIC STYLES */
+#this-qr img {
+  height:600px;
+}
+#queen {
+  width: 832px;
+  height:720px;
+  opacity:1;
+}
